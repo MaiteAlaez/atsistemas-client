@@ -1,0 +1,43 @@
+$small: 300px;
+$medium: 600px;
+
+.component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.base {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: relative;
+}
+
+.image {
+  width: 20rem;
+  height: auto;
+}
+
+.name {
+  position: absolute;
+  font-size: 1rem;
+  transform: rotate(270deg);
+}
+
+.info {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  div {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: $medium) {
+  .component {
+    flex-flow: row wrap;
+  }
+}
